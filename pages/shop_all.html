@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop All</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-full grid justify-evenly">
+    <header class="sticky top-0 z-50 bg-pink-100">
+      <!-- nav bar -->
+      <nav>
+        <div
+          class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="../assets/images/image_18.png"
+              class="h-8 sm:h-14 md:h-16 rounded-full"
+              alt="Logo"
+            />
+            <span
+              class="ml-3 sm:ml-4 md:ml-5 mt-1 lg:mt-3 text-xl sm:text-2xl lgtext-3xl font-semibold whitespace-nowrap"
+            >
+              Skin Apsor
+            </span>
+          </div>
+          <div class="m-[6px_0_6px_0] flex flex-row justify-between w-[818px] h-[fit-content] box-sizing-border">
+            <div class="m-[8px_0_8px_0] flex flex-row justify-between w-[538px] h-[fit-content] box-sizing-border">
+              <div class="flex box-sizing-border" id="home">
+                <a class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[#000000]" href="./index.html">
+                Home
+                </a>
+              </div>
+              <div class="flex box-sizing-border" id="shop">
+                <a class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[#000000]" href="./shop_all.html">
+                Shop
+                </a>
+              </div>
+              <div class="flex box-sizing-border" id="cart">
+                <a class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[#000000]" href="./cart.html">
+                Cart
+                </a>
+              </div>
+              <div class="m-[0_0px_0_0] flex box-sizing-border" id="aboutus">
+                <a class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[#000000]" href="./about_us.html">
+                About Us
+                </a>
+              </div>
+            </div>
+            <div class="rounded-[20px] border-[1px_solid_var(--additional-colorsoutline-black,rgba(0,0,0,0.47))] bg-[var(--primary-colorspink,#FF67D4)] flex p-[7px_19.4px_7px_19px] box-sizing-border">
+              <span class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[var(--primary-colors-black,#1E1E1E)]">
+              Log In
+              </span>
+            </div>
+            <div class="rounded-[20px] border-[1px_solid_var(--additional-colorsoutline-black,rgba(0,0,0,0.47))] bg-[var(--primary-colorspink,#FF67D4)] flex p-[7px_19.3px_7px_19px] box-sizing-border">
+              <span class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[var(--primary-colors-black,#1E1E1E)]">
+              Sign Up
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="m-[0_79px_50px_79px] flex flex-col items-center w-[fit-content] box-sizing-border py-20">
+        <div class="m-[0_0_50px_1px] flex box-sizing-border py">
+          <span class="break-words font-['Poppins'] font-[var(--bold-fontsbold-40,700)] text-[40px] text-[var(--primary-colors-secondary-black,#484444)]">
+          ALL PRODUCTS
+          </span>
+        </div>
+        <div class="m-[0_3px_50px_3px] flex flex-row justify-between w-[1276px] box-sizing-border">
+          <div class="rounded-[20px] border-[1px_solid_var(--additional-colorsoutline-black,rgba(0,0,0,0.47))] bg-[var(--primary-colorspink,#FF67D4)] m-[11px_0_11px_0] flex flex-row p-[7px_19px_7px_18.5px] w-[113px] h-[fit-content] box-sizing-border">
+            <div class="relative m-[0_10.4px_0_0] w-auto ml-6">
+              <span class="absolute translate-x-[-75%] font-['Poppins'] text-[14px] text-[var(--primary-colors-black,#1E1E1E)]">
+              Filter
+              </span>
+            </div>
+            <img class="m-[3.5px_0_3.5px_0] w-[10px] h-[13.9px] ml-4" src="../assets/vectors/vector_121_x2.svg" />
+          </div>
+          <!-- Search -->
+          <div class="rounded-[20px] border-grey-400 flex flex-row justify-between p-[13.5px_23px_13.5px_23.5px] w-[410px] box-sizing-border">
+            <input class="m-[0_15px_0_0] w-[400px] break-words font-['Poppins'] text-[20px] text-[var(--primary-colors-secondary-black,#484444)]" type="search" placeholder="Search Product">
+            </input>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 mx-auto">
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_11.png')] m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_0_8.3px_0] flex self-start box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Anua Heartleaf Cleanser
+                  </span>
+                </div>
+                <div class="m-[0_17.2px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A gentle yet effective cleansing foam unclogs pores while keeping the skin ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_58_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_11_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_12_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_27_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_28_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  7.77 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_86_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_7.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="relative m-[0_27.5px_0_27.5px] flex box-sizing-border">
+                <div class="relative flex flex-col items-center box-sizing-border">
+                  <div class="m-[0_17.5px_8.3px_0] flex box-sizing-border">
+                    <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                    CosRx Advanced Snail Mucin Power Essence
+                    </span>
+                  </div>
+                  <div class="m-[0_4.8px_20.7px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  A lightweight essence powered by 96.3%—the buzzy K-beauty ingredient made ...
+                  </div>
+                  <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                    <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                    12.00 $
+                    </span>
+                    <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_50_x2.svg" />
+                  </div>
+                </div>
+                <div class="absolute left-[0px] bottom-[41.3px] flex flex-row justify-between w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_70_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_71_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_80_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_91_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_1_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_23.png')] m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_10px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Aestura ATOBarrier365 Cream
+                  </span>
+                </div>
+                <div class="m-[0_21px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A gentle, nourishing face cream designed to improve skin&#39;s moisture ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_149_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_57_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_18_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_93_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_16_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  15.00 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_37_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_2.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_23.2px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Laneige Sleeping Lip <br />
+                  Mask
+                  </span>
+                </div>
+                <div class="m-[0_16.7px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A silky-textured lip mask enriched with Laneige’s antioxidant-rich Berry Mix ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_62_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_126_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_151_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_2_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_78_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  24.00 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_64_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/cart_card_6.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_0_8.3px_0] flex self-start box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Anua Heartleaf 77% Toner Pads
+                  </span>
+                </div>
+                <div class="m-[0_16px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A set of toner pads enriched in PHAs to reduce pore size, blackheads, ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_131_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_104_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_145_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_35_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_55_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  28.00 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_142_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_15.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_8.3px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Hero Cosmetics Mighty Patch The Original
+                  </span>
+                </div>
+                <div class="m-[0_20.9px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A set of pimple patches enriched with the medical-grade gel hydrocolloid ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_53_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_40_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_88_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_136_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_13_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  2.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_45_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_3.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_0_8.3px_0] flex self-start box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Anua Heartleaf Pore Control Cleansing Oil
+                  </span>
+                </div>
+                <div class="m-[0_0_8.3px_0] inline-block self-start break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A non-comedogenic cleansing oil to clear dirt, debris, and blackheads ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_82_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_19_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_129_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_17_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_122_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  9.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_143_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_6.png')] m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_13.5px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Innisfree Pore Clearing Clay Mask
+                  </span>
+                </div>
+                <div class="m-[0_10.3px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                Innisfree’s lineup is powered by ingredients sourced from Korea’s Jeju ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_30_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_51_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_60_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_3_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_117_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  15.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_7_x2.svg" />
+                </div>
+              </div>
+            </div>
+          </Poppins>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_13.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_0_8.3px_0] flex self-start box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  I’m From Mugwort Cream
+                  </span>
+                </div>
+                <div class="m-[0_0_8.3px_0] inline-block self-start break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A lightweight moisturizer powered by 73.55% mugwort extract, ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_31_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_49_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_127_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_101_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_97_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  17.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_8_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/image_20.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_7.5px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Dr. Jart+ Cicapair Color Correcting Treatment
+                  </span>
+                </div>
+                <div class="m-[0_3.8px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A creamy treatment featuring a blend of tiger grass (otherwise known as ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_47_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_153_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_24_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_137_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_106_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  18.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_107_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/cart_card.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_7.5px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                    WEYOUNG Skin Filter Sunscreen
+                  </span>
+                </div>
+                <div class="m-[0_3.8px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  Unveil flawless elegance with Weyoung Skin Filter Sunscreen...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_47_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_153_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_24_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_137_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_106_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  19.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_107_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/cart_card.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_7.5px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                    BESOMA Collagen Cleansing Balm
+                  </span>
+                </div>
+                <div class="m-[0_3.8px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  Melts away makeup effectively, removes dirt, oil, pollution and debris at the end ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_47_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_153_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_24_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_137_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_106_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  35.00 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_107_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/cart_card_1.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_0_8.3px_0] flex self-start box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  BESOMA Milky Jelly Cleanser
+                  </span>
+                </div>
+                <div class="m-[0_0_8.3px_0] inline-block self-start break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                An effective yet gentle cleanser that rules them all. Suits every skin type ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_96_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_46_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_113_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_14_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_36_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  34.00 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_10_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC25ccZ9WYbVd-vz8ECniAPDTaLyV1-sNODA&s')] m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_23.6px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  MARY BONDOL Anwyn Clarifying Toner
+                  </span>
+                </div>
+                <div class="m-[0_7.8px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                A gentle yet effective chemical exfoliant with the key ingredients of AHA BHA ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_135_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_56_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_74_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_139_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_108_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  11.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_120_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('https://i.pinimg.com/736x/9c/77/18/9c771814930bdf48109a806a4d3aa987.jpg')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_10.3px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                    The Ordinary Glycolic Acid7% Exfoliate Toner 
+                  </span>
+                </div>
+                <div class="m-[0_10.9px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                An award-winning formula that targets visible signs of ageing and dullness ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_66_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_9_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_54_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_123_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_125_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  8.55 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_90_x2.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[var(--additional-colorsbackground-pink,rgba(226,106,185,0.15))] flex flex-col items-center p-[0_0_21px_0] box-sizing-border">
+              <div class="rounded-t-[10px] border-[1px_solid_var(--primary-colorspink,#FF67D4)] bg-[url('../assets/images/cart_card_2.png')] bg-[50%_50%] bg-cover bg-no-repeat m-[0_0_20px_0] w-[304px] h-[206px]">
+              </div>
+              <div class="m-[0_27.5px_0_27.5px] flex flex-col w-[fit-content] box-sizing-border">
+                <div class="m-[0_10.3px_8.3px_0] flex box-sizing-border">
+                  <span class="break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  Beauty of Joseon Relief Sun : Rice + Probiotics
+                  </span>
+                </div>
+                <div class="m-[0_10.9px_8.3px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                Relief Sun is an organic sunscreen that applies gently on the skin and by also ...
+                </div>
+                <div class="m-[0_0_11.3px_0] flex flex-row justify-between self-start w-[247px] box-sizing-border">
+                  <div class="flex flex-row w-[144px] box-sizing-border">
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_66_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_9_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_54_x2.svg" />
+                    <img class="m-[0_10px_0_0] w-[20px] h-[19.1px]" src="../assets/vectors/vector_123_x2.svg" />
+                    <img class="w-[20px] h-[19.1px]" src="../assets/vectors/vector_125_x2.svg" />
+                  </div>
+                  <div class="m-[0.6px_0_0.6px_0] inline-block break-words font-['Poppins'] font-[var(--regular-fonts-font-12,400)] text-[12px] text-[#000000]">
+                  4.00 / 5
+                  </div>
+                </div>
+                <div class="flex flex-row justify-between w-[247px] box-sizing-border">
+                  <span class="m-[0_15px_0_0] w-[78px] break-words font-['Poppins'] font-[var(--bold-fonts-bold-20,700)] text-[20px] text-[#000000]">
+                  17.99 $
+                  </span>
+                  <img class="m-[3.4px_0_4.4px_0] w-[25px] h-[22.2px]" src="../assets/vectors/vector_90_x2.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[var(--white-background,#FFFFFF)] flex flex-col p-[41.5px_82px_41.5px_80px] w-[fit-content] box-sizing-border">
+      <div class="m-[0_0_33px_0] flex flex-row w-[fit-content] box-sizing-border">
+        <div class="m-[0_141.5px_307px_0] flex flex-col box-sizing-border">
+          <div class="m-[0_19.3px_13px_0] inline-block break-words font-['Poppins'] font-[var(--text-b,600)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Website
+          </div>
+          <div class="bg-[#000000] m-[0_0_12px_0] self-start w-[35.5px] h-[0px]">
+          </div>
+          <div class="m-[0_0_13px_0] inline-block break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Homepage
+          </div>
+          <div class="m-[0_0_13px_0] inline-block self-start break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Shop All
+          </div>
+          <div class="m-[0_0_13px_0] inline-block self-start break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Cart
+          </div>
+          <span class="m-[0_12.3px_0_0] break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          About Us
+          </span>
+        </div>
+        <div class="m-[0_141.1px_307px_0] flex flex-col box-sizing-border">
+          <div class="m-[0_11px_13px_0] inline-block break-words font-['Poppins'] font-[var(--text-b,600)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Company
+          </div>
+          <div class="bg-[#000000] m-[0_0_12px_0] self-start w-[35.5px] h-[0px]">
+          </div>
+          <div class="m-[0_14.7px_13px_0] inline-block break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          About Us
+          </div>
+          <div class="m-[0_0_13px_0] inline-block self-start break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Careers
+          </div>
+          <div class="m-[0_0_13px_0] inline-block self-start break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          FAQs
+          </div>
+          <span class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Contact Us
+          </span>
+        </div>
+        <div class="m-[0_139.5px_0_0] flex flex-col w-[467px] box-sizing-border">
+          <div class="m-[0_0_30px_0] inline-block self-start break-words font-['Poppins'] font-[var(--text-b,600)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Contact us
+          </div>
+          <div class="relative h-[363px] box-sizing-border">
+            <div class="relative flex flex-col box-sizing-border">
+              <div class="rounded-[4px] bg-[var(--light-grey-input-fiels-forms,#F7F7F7)] m-[0_0_18px_0] p-[17px_16px_17px_16px] w-auto box-sizing-border">
+                <input class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]" placeholder="Name" type="name">
+                </input>
+              </div>
+              <div class="rounded-[4px] bg-[var(--light-grey-input-fiels-forms,#F7F7F7)] m-[0_0_18px_0] p-[17px_16px_17px_16px] w-auto box-sizing-border">
+                <input class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]" placeholder="Phone Number" type="tel">
+                </input>
+              </div>
+              <div class="rounded-[4px] bg-[var(--light-grey-input-fiels-forms,#F7F7F7)] m-[0_0_18px_0] p-[17px_16px_17px_16px] w-auto box-sizing-border">
+                <input class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]" placeholder="Email" type="email">
+                </input>
+              </div>
+              <div class="rounded-[4px] bg-[var(--light-grey-input-fiels-forms,#F7F7F7)] p-[17px_16px_30px_16px] w-auto box-sizing-border">
+                <input class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]" placeholder="Comment" type="text">
+                </input>
+              </div>
+            </div>
+            <div class="rounded-[20px] border-[1px_solid_var(--additional-colorsoutline-black,rgba(0,0,0,0.47))] bg-[var(--primary-colorspink,#FF67D4)] absolute right-[0px] bottom-[0px] flex p-[7px_14.9px_7px_14.5px] box-sizing-border">
+              <span class="break-words font-['Poppins'] font-[var(--regular-fonts-font-14,400)] text-[14px] text-[var(--primary-colors-black,#1E1E1E)]">
+              Submit
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="m-[0_0_322px_0] flex flex-col items-center w-[217px] h-[fit-content] box-sizing-border">
+          <!-- logo -->
+          <div class="relative m-[0_0_18px_0] w-[214px] h-[49px]">
+            <div class="rounded-[23px] bg-[url('../assets/images/image_18.png')] absolute left-[0px] bottom-[1.5px] w-[46px] h-[46px]">
+            </div>
+            <div class="absolute right-[0px] bottom-[0px] w-[157px] h-[49px]">
+              <span class="absolute left-[50%] bottom-[0px] translate-x-[-50%] break-words font-['Quintessential'] font-normal text-[32px] text-[#000000]">
+              Skin Apsor
+              </span>
+            </div>
+          </div>
+          <div class="m-[0_0_0_0.5px] flex flex-col items-center w-[217px] box-sizing-border">
+            <div class="m-[0_2.7px_14px_0] inline-block break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+            Follow us
+            </div>
+            <div class="bg-[#000000] m-[0_2px_21px_0] w-[35.5px] h-[0px]">
+            </div>
+            <div class="flex flex-row justify-between w-[152px] box-sizing-border">
+              <div class="flex w-[40px] h-[40px] box-sizing-border">
+                <img class="w-[12px] h-[23px]" src="../assets/vectors/vector_x2.svg" />
+              </div>
+              <div class="m-[5px_0_2.4px_0] flex w-[40px] h-[40px] box-sizing-border">
+                <img class="w-[19.6px] h-[15.6px]" src="../assets/vectors/vector_75_x2.svg" />
+              </div>
+              <div class="m-[4px_0_4.7px_0] flex w-[40px] h-[40px] box-sizing-border">
+                <img class="w-[15px] h-[14.3px]" src="../assets/vectors/vector_119_x2.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-between self-start w-[526px] box-sizing-border">
+        <span class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+          Privacy Policy
+        </span>
+        <span class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+        Terms of Use
+        </span>
+        <span class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+        Sales and Refunds
+        </span>
+        <span class="break-words font-['Poppins'] font-[var(--text,400)] text-[16px] text-[var(--black-fonts-headings,#2D2E2E)]">
+        Legal
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
